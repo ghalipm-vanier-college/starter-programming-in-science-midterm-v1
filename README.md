@@ -64,18 +64,19 @@ This template repository is the starter project for the Programming in Science W
 #### Example (n = 3):
 ```python
    rhombus_shape(3)
-```
+
 ### Output:
   *
  ***
 *****
  ***
   *
+```
 
 #### Example (n = 4):
 ```python
    rhombus_shape(4)
-```
+
 ### Output:
       
    *
@@ -85,10 +86,11 @@ This template repository is the starter project for the Programming in Science W
  *****
   ***
    *
+```
 #### Example (n = 5):
 ```python
    rhombus_shape(5)
-```
+
 ### Output:
       
     *
@@ -100,7 +102,7 @@ This template repository is the starter project for the Programming in Science W
   *****
    ***
     *
-
+```
 ### Run Command
 
 ```
