@@ -58,32 +58,48 @@ This template repository is the starter project for the Programming in Science W
     *
    ```
 
-4. **Write a function `hollow_left_parallelogram(n)` that returns a string representing a left leaning hollow parallelogram pattern of star-space (`* `) with height `n`.**
-   - The rows should be at least 3; otherwise, return: `"The parallelogram rows should be at least 3."`
+4. **Write a function `rhombus_shape(n)` that returns a string representing a rhombus pattern of star-space (`*`) with height `n`.**
+   - The rows should be at least 3.
    
-   #### Example (n = 3):
-      ```python
-   hollow_left_parallelogram(3)
+#### Example (n = 3):
+```python
+   rhombus_shape(3)
+```
+### Output:
+  *
+ ***
+*****
+ ***
+  *
 
-   # Output:
+#### Example (n = 4):
+```python
+   rhombus_shape(4)
+```
+### Output:
       
-       * * * 
-        *   * 
-         * * *
-   ```
-   #### Example (n = 4):
-      ```python
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+#### Example (n = 5):
+```python
+   rhombus_shape(5)
+```
+### Output:
       
-   hollow_left_parallelogram(4)
-
-   # Output:
-      
-       * * * * 
-        *     * 
-         *     * 
-          * * * *
-   ```
-
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
 
 ### Run Command
 
