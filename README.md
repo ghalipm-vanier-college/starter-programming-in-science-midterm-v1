@@ -25,18 +25,12 @@ This template repository is the starter project for the Programming in Science W
   ```
 
 
-3. **Write a function `upper_left_triangle(n)` that returns a string representing a upper left triangle pattern of star-space (`* `) with height `n`.**
-   - The height should be at least 3; otherwise, return: `"The triangle height should be at least 3."`
-
-
-   #### Example (n = 2):
-   ```
-   The triangle height should be at least 3.
-   ```
+3. **Write a function `hollow_triangle_with_upper_left_right_angle(n)` that returns a string representing a triangle with upper left right angle pattern of star-space (`*`) with height `n`.**
+   - The height should be at least 3.
 
    #### Example (n = 3):
    ```python
-   upper_left_triangle(3)
+   hollow_triangle_with_upper_left_right_angle(3)
 
    # Output:
    
@@ -44,16 +38,28 @@ This template repository is the starter project for the Programming in Science W
     * * 
     *
    ```
+   #### Example (n = 4):
+   ```python
+   hollow_triangle_with_upper_left_right_angle(4)
+
+   # Output:
+    
+    * * * * 
+    *   * 
+    * * 
+    *
+   ```
+
 
    #### Example (n = 5):
    ```python
-   upper_left_triangle(5)
+   hollow_triangle_with_upper_left_right_angle(5)
 
    # Output:
    
     * * * * * 
-    * * * * 
-    * * * 
+    *     * 
+    *   * 
     * * 
     *
    ```
