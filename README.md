@@ -14,16 +14,16 @@ This template repository is the starter project for the Programming in Science W
 ### Question(s)
 
 
-1.  **Write a function `sum_of_numbers(numbers)` that returns the sum of `numbers` list.**
+1.  **Write a  function `sum_of_even_nums_in(numbers)` that returns the sum of even numbers in the list of `numbers`.**
 
 #### Example:
    ```python
-  sum_of_numbers([5,10,2,8])    # Output: 25
-  sum_of_numbers([-7,9,10,8])    # Output: 20
+  sum_of_even_nums_in([5,10,2,8])    # Output: 20
+  sum_of_even_nums_in([1,9,10,8])    # Output: 18
   ```
 
 
-2. **Write a function `area_of_triangle(a, b, c)` that calculates the area of a triangle given the lengths of all three sides using Heron's formula. [ s=(a + b + c)/2,  A = \sqrt(s * (s - a) * (s - b) * (s - c)) ] .**
+2. **Write a function `area_of_triangle(a, b, c)` that calculates the area of a triangle given the lengths of all three sides using Heron's formula. [ s=(a + b + c)/2,  A = sqrt(s * (s - a) * (s - b) * (s - c)) ] .**
    - The function should return the area rounded to 2 decimal places.
    - Use the sqrt function from the math module if needed.
 
