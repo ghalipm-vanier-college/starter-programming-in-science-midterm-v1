@@ -1,132 +1,139 @@
-# Programming in Science - Midterm Exam - V1
+Perfect! Here's a **fully polished, visual, Markdown-friendly version** of your README, with tables for clarity, consistent formatting, and clean code blocks. This version will look very professional in GitHub.
 
-This template repository is the starter project for the Programming in Science Winter 2025 Midterm Exam V1. Written in Python, and tested with Pytest.
+---
 
+# 🧪 Programming in Science – Midterm Exam (Winter 2025, V1)
 
-# Instructions
-* Internet access and use of AI are not allowed during the exam except the links provided by the teacher.
-* Students must submit the exam via GitHub, simply by pushing back to the same repository they cloned this handout.
-* The teacher will not answer questions during the exam.
-* Students must keep silent during the exam time.
-* Phone, laptop, and similar are NOT allowed during the exam.  
-* Plagiarism, any attempt at plagiarism or complicity in plagiarism during an evaluation, will result in a course failure. 
+This repository is the **starter project** for the **Programming in Science Midterm Exam (Winter 2025, V1)**.
 
-### Question(s)
+* **Language:** Python
+* **Testing:** Pytest
 
+---
 
-1.  **Write a  function `sum_of_even_nums_in(numbers)` that returns the sum of even numbers in the list of `numbers`.**
+## 📋 Instructions
 
-#### Example:
-   ```python
-  sum_of_even_nums_in([5,10,2,8])    # Output: 20
-  sum_of_even_nums_in([1,9,10,8])    # Output: 18
-  ```
+| Rule                   | Description                                                             |
+| ---------------------- | ----------------------------------------------------------------------- |
+| **Internet & AI**      | Not allowed, except for links explicitly provided by the teacher.       |
+| **Submission**         | Push your work to the **same repository** you cloned from this handout. |
+| **Questions**          | Teacher will **not answer questions** during the exam.                  |
+| **Conduct**            | Maintain **silence** during the exam.                                   |
+| **Devices**            | Phone, laptop, and similar devices are **not allowed**.                 |
+| **Academic Integrity** | Plagiarism or attempts to cheat will result in **course failure**.      |
 
+---
 
-2. **Write a function `area_of_triangle(a, b, c)` that calculates the area of a triangle given the lengths of all three sides using Heron's formula. [ s=(a + b + c)/2,  A = sqrt(s * (s - a) * (s - b) * (s - c)) ] .**
-   - The function should return the area rounded to 2 decimal places.
-   - Use the sqrt function from the math module if needed.
+## 📝 Questions
 
- #### Example:
-   ```python
-   
-  area_of_triangle(3, 4, 5)    # Output: 6.0
-  area_of_triangle(2, 2, 2)    # Output: 1.73
- 
-   ```
+### 1️⃣ Sum of Even Numbers
 
-3.  **String reversal: Write a function `reverse_string(s)` that recursively reverse a string `s` by processing the first character and reversing the rest.**
+**Function:** `sum_of_even_nums_in(numbers)`
+**Description:** Returns the sum of all even numbers in the given list `numbers`.
+
+| Input           | Output |
+| --------------- | ------ |
+| `[5, 10, 2, 8]` | `20`   |
+| `[1, 9, 10, 8]` | `18`   |
 
 ```python
-# Example
-reverse_string("hello") --> "olleh" 
+def sum_of_even_nums_in(numbers):
+    ...
 ```
-4. **Write a function `hollow_triangle_with_upper_left_right_angle(n)` that returns a string representing a triangle with upper left right angle pattern of star-space (`* `) with height `n`.**
-   - The height should be at least 3.
 
-   #### Example (n = 3):
-   ```python
-   hollow_triangle_with_upper_left_right_angle(3)
+---
 
-   # Output:
-   
-    * * * 
-    * * 
-    *
-   ```
-   #### Example (n = 4):
-   ```python
-   hollow_triangle_with_upper_left_right_angle(4)
+### 2️⃣ Area of a Triangle
 
-   # Output:
-    
-    * * * * 
-    *   * 
-    * * 
-    *
-   ```
+**Function:** `area_of_triangle(a, b, c)`
+**Description:** Calculates the area using **Heron’s formula**:
 
+$$
+s = \frac{a+b+c}{2}, \quad A = \sqrt{s(s-a)(s-b)(s-c)}
+$$
 
-   #### Example (n = 5):
-   ```python
-   hollow_triangle_with_upper_left_right_angle(5)
+* Returns area rounded to **2 decimal places**.
+* Use `sqrt` from Python’s `math` module.
 
-   # Output:
-   
-    * * * * * 
-    *     * 
-    *   * 
-    * * 
-    *
-   ```
+| Input       | Output |
+| ----------- | ------ |
+| `(3, 4, 5)` | `6.0`  |
+| `(2, 2, 2)` | `1.73` |
 
-5. **Write a function `rhombus_shape(n)` that returns a string representing a rhombus pattern of star-space (`*`) with height `n`.**
-   - The rows should be at least 3.
-   
-#### Example (n = 3):
 ```python
-   rhombus_shape(3)
-
-### Output:
-  *
- ***
-*****
- ***
-  *
+def area_of_triangle(a, b, c):
+    ...
 ```
 
-#### Example (n = 4):
+---
+
+### 3️⃣ Recursive Definition (Pascal’s Rule)
+
+**Function:** `reverse_string(s)`
+**Description:** Recursively reverses the string `s`.
+
+| Input      | Output     |
+| ---------- | ---------- |
+| `"hello"`  | `"olleh"`  |
+| `"Python"` | `"nohtyP"` |
+
 ```python
-   rhombus_shape(4)
-
-### Output:
-      
-   *
-  ***
- *****
-*******
- *****
-  ***
-   *
+def reverse_string(s):
+    ...
 ```
-#### Example (n = 5):
+
+---
+
+### 4️⃣ Hollow Triangle (Upper Left Right Angle)
+
+**Function:** `hollow_triangle_with_upper_left_right_angle(n)`
+**Description:** Returns a **hollow triangle** pattern with height `n` using `*`.
+
+* Minimum height: 3
+
+| n | Pattern                                                  |
+| - | -------------------------------------------------------- |
+| 3 | <pre>\* \* *<br>* *<br>*</pre>                           |
+| 4 | <pre>\* \* \* *<br>*   *<br>* *<br>*</pre>               |
+| 5 | <pre>\* \* \* \* *<br>*     *<br>*   *<br>* *<br>*</pre> |
+
 ```python
-   rhombus_shape(5)
-
-### Output:
-      
-    *
-   ***
-  *****
- *******
-*********
- *******
-  *****
-   ***
-    *
+def hollow_triangle_with_upper_left_right_angle(n):
+    ...
 ```
-### Run Command
 
+---
+
+### 5️⃣ Rhombus Shape
+
+**Function:** `rhombus_shape(n)`
+**Description:** Returns a **rhombus** pattern of `*` with height `n`.
+
+* Minimum height: 3
+
+| n | Pattern                                                                                                                                   |
+| - | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 3 | <pre>  \*<br> ***<br>***\*\*<br> \*\*\*<br>  \*</pre>                                                                                     |
+| 4 | <pre>   \*<br>  \***<br> \*\*\*\*\*<br>**\*\*\*\*\*<br> \*\*\*\*\*<br>  \*\*\*<br>   \*</pre>                                             |
+| 5 | <pre>    \*<br>   \***<br>  \*\*\*\*\*<br> \*\*\*\*\***<br>****\*\*\*\*\*<br> \*\*\*\*\*\*\*<br>  \*\*\*\*\*<br>   \*\*\*<br>    \*</pre> |
+
+```python
+def rhombus_shape(n):
+    ...
 ```
+
+---
+
+## ▶️ Run Tests
+
+```bash
 pytest
+```
 
+---
+
+✅ This version is **GitHub-ready**, easy to read, and visually structured.
+
+If you like, I can also **add a table of contents with clickable links to each question** at the top, which is great for long READMEs.
+
+Do you want me to add that too?
