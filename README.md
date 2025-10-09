@@ -1,10 +1,7 @@
-Perfect! Here's a **fully polished, visual, Markdown-friendly version** of your README, with tables for clarity, consistent formatting, and clean code blocks. This version will look very professional in GitHub.
 
 ---
 
-# 🧪 Programming in Science – Midterm Exam (Winter 2025, V1)
-
-This repository is the **starter project** for the **Programming in Science Midterm Exam (Winter 2025, V1)**.
+# Programming in Science – Midterm Exam (Winter 2025, V1)
 
 * **Language:** Python
 * **Testing:** Pytest
@@ -67,18 +64,29 @@ def area_of_triangle(a, b, c):
 
 ---
 
-### 3️⃣ Recursive Definition (Pascal’s Rule)
+### 3️⃣ Pascal’s Rule
 
-**Function:** `reverse_string(s)`
-**Description:** Recursively reverses the string `s`.
+**Function:** `pascal(n,k)`
 
-| Input      | Output     |
-| ---------- | ---------- |
-| `"hello"`  | `"olleh"`  |
-| `"Python"` | `"nohtyP"` |
+<!--  Each value in Pascal’s triangle (row n, position k) is the sum of the two values directly above it — one from the previous row and previous column, and one from the previous row and same column.
+The first and last values in each row are always 1. -->
+
+**Description:** Each row in the triangle satisfies:
+`pascal(n,k) = pascal(n-1,k-1) + pascal(n-1,k), 1 ≤ n, 0 ≤ k ≤ n; pascal(n,0) = pascal(n,n) = 1`
 
 ```python
-def reverse_string(s):
+| Input  | Output    |
+|--n---  | --------- |
+|  0     | [1]       |
+|  1     | [1,1]     |
+|  2     | [1,2,1]   |
+|  3     |[1,3,3,1]  |
+|  4     |[1,4,6,4,1]|
+```
+--- 
+
+```python
+def pascal(n,k):
     ...
 ```
 
@@ -87,15 +95,34 @@ def reverse_string(s):
 ### 4️⃣ Hollow Triangle (Upper Left Right Angle)
 
 **Function:** `hollow_triangle_with_upper_left_right_angle(n)`
-**Description:** Returns a **hollow triangle** pattern with height `n` using `*`.
+**Description:** Returns a **hollow triangle** pattern with height `n` using `* `.
 
 * Minimum height: 3
 
-| n | Pattern                                                  |
-| - | -------------------------------------------------------- |
-| 3 | <pre>\* \* *<br>* *<br>*</pre>                           |
-| 4 | <pre>\* \* \* *<br>*   *<br>* *<br>*</pre>               |
-| 5 | <pre>\* \* \* \* *<br>*     *<br>*   *<br>* *<br>*</pre> |
+```python
+
+n=3:
+
+* * *
+* *
+*
+
+n=4:
+
+* * * *
+* * *
+* *
+*
+n=5:
+
+* * * * *
+* * * *
+* * *
+* * 
+*
+```
+
+---
 
 ```python
 def hollow_triangle_with_upper_left_right_angle(n):
@@ -111,12 +138,38 @@ def hollow_triangle_with_upper_left_right_angle(n):
 
 * Minimum height: 3
 
-| n | Pattern                                                                                                                                   |
-| - | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| 3 | <pre>  \*<br> ***<br>***\*\*<br> \*\*\*<br>  \*</pre>                                                                                     |
-| 4 | <pre>   \*<br>  \***<br> \*\*\*\*\*<br>**\*\*\*\*\*<br> \*\*\*\*\*<br>  \*\*\*<br>   \*</pre>                                             |
-| 5 | <pre>    \*<br>   \***<br>  \*\*\*\*\*<br> \*\*\*\*\***<br>****\*\*\*\*\*<br> \*\*\*\*\*\*\*<br>  \*\*\*\*\*<br>   \*\*\*<br>    \*</pre> |
+# rhombus shape
+```python
+n=3:
 
+  *
+ ***
+*****
+ ***
+  *
+  
+ n=4:
+ 
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+ n=5:
+ 
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+```
 ```python
 def rhombus_shape(n):
     ...
