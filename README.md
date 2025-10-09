@@ -75,13 +75,14 @@ The first and last values in each row are always 1. -->
 `pascal(n,k) = pascal(n-1,k-1) + pascal(n-1,k), 1 ≤ n, 0 ≤ k ≤ n; pascal(n,0) = pascal(n,n) = 1`
 
 ```python
-| Input  | Output    |
-|--n---  | --------- |
-|  0     | [1]       |
-|  1     | [1,1]     |
-|  2     | [1,2,1]   |
-|  3     |[1,3,3,1]  |
-|  4     |[1,4,6,4,1]|
+| Input (n) | Output (n-th row of Pascal’s Triangle) |
+| :-------: | :------------------------------------: |
+|     0     |                   [1]                  |
+|     1     |                 [1, 1]                 |
+|     2     |                [1, 2, 1]               |
+|     3     |              [1, 3, 3, 1]              |
+|     4     |             [1, 4, 6, 4, 1]            |
+
 ```
 --- 
 
