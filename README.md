@@ -66,7 +66,7 @@ def area_of_triangle(a, b, c):
 
 ### 3️⃣ Pascal’s Rule
 
-**Function:** `pascal(n,k)`
+**Function:** the n-th row of Pascal’s triangle `pascal(n,k)`
 
 <!--  Each value in Pascal’s triangle (row n, position k) is the sum of the two values directly above it — one from the previous row and previous column, and one from the previous row and same column.
 The first and last values in each row are always 1. -->
