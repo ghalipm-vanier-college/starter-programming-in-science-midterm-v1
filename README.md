@@ -1,7 +1,7 @@
 
 ---
 
-# Programming in Science – Midterm Exam (Winter 2025, V1)
+# Programming in Science – Midterm Exam (Fall 2025, V1)
 
 * **Language:** Python
 * **Testing:** Pytest
