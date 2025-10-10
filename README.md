@@ -186,8 +186,4 @@ pytest
 
 ---
 
-✅ This version is **GitHub-ready**, easy to read, and visually structured.
 
-If you like, I can also **add a table of contents with clickable links to each question** at the top, which is great for long READMEs.
-
-Do you want me to add that too?
