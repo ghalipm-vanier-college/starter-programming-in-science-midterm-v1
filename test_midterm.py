@@ -36,17 +36,17 @@ def test_pascal():
 # Test Q4: hollow_triangle_with_upper_left_right_angle
 # ------------------------------------------------------------
 def test_hollow_triangle_with_upper_left_right_angle():
-    assert hollow_triangle_with_upper_left_right_angle(3) == "* * * \n* * \n*"
-    assert hollow_triangle_with_upper_left_right_angle(4) == "* * * * \n*   * \n* * \n*"
-    assert hollow_triangle_with_upper_left_right_angle(5) == "* * * * * \n*     * \n*   * \n* * \n*"
+    assert hollow_triangle_with_upper_left_right_angle(3) == "* * *\n* *\n*"
+    assert hollow_triangle_with_upper_left_right_angle(4) == "* * * *\n*   *\n* * \n*"
+    assert hollow_triangle_with_upper_left_right_angle(5) == "* * * * *\n*     *\n*   *\n* *\n*"
 
 # ------------------------------------------------------------
 # Test Q5: rhombus_shape
 # ------------------------------------------------------------
 def test_rhombus_shape():
-    assert rhombus_shape(3) == "  * \n *** \n***** \n *** \n  *"
-    assert rhombus_shape(4) == "   * \n  *** \n ***** \n******* \n ***** \n  *** \n   *"
-    assert rhombus_shape(5) == "    * \n   *** \n  ***** \n *******\n********* \n ******* \n  ***** \n   *** \n    *"
+    assert rhombus_shape(3) == "  *\n ***\n*****\n *** \n  *"
+    assert rhombus_shape(4) == "   *\n  ***\n *****\n*******\n *****\n  ***\n   *"
+    assert rhombus_shape(5) == "    *\n   ***\n  *****\n *******\n*********\n *******\n  *****\n   ***\n    *"
 
 # ------------------------------------------------------------
 # Run all tests
